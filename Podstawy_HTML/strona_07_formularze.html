@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formularze</title>
+</head>
+<body>
+    <form action="mailto:nazwa@domena.pl" method="POST">
+        Imię:<br/>
+        <input type="text" name="imie"><br/>
+        Nazwisko:<br/>
+        <input type="text" name="nazwisko"/><br/><br/>
+
+        Wybierz płeć:<br/>
+        <input type="radio" name="plec" value="k"> Kobieta <br/>
+        <input type="radio" name="plec" value="m" checked> Mężczyzna <br/><br/>
+
+        Twoje zainteresowania:<br/>
+        <input type="checkbox" name="zainteresowania" value="komputery"/> Komputery<br/>
+        <input type="checkbox" name="zainteresowania" value="jedzenie"/> Jedzenie<br/>
+        <input type="checkbox" name="zainteresowania" value="samochody"/> Samochody<br/>
+        <input type="checkbox" name="zainteresowania" value="ksiazki"/> Książki<br/><br/>
+        Wybierz kraj:<br/>
+        <select name="kraj">
+            <option>Polska</option>
+            <option>Rosja</option>
+            <option>Niemcy</option>
+            <option>Zanzibar</option>
+            <option>KRLD</option>
+        </select><br/><br/>
+        Tu wpisz coś o sobie:<br/>
+        <textarea name="info"> Tu pisz </textarea><br/><br/>
+        Twój ulubiony kolor:<br/>
+        <input type="color" name="kolor"><br/><br/>
+        Twój e-mail:<br/>
+        <input type="email" name="email"><br/>
+        <br/><br/><br/>
+        <input type="submit" value="Wyślij formularz"/>
+        <button type="submit">Wyślij formularz</button>
+        <input type="reset" value="Wyczyść formularz">
+    </form>
+</body>
+</html>
