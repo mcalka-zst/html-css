@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        #p1 {
+            width: 100%;
+            opacity: 1.0;
+            text-align: center;
+            animation-name: zmiana;
+            color: red;
+            animation-duration: 15s;
+            margin: auto;
+            font-size: 16px;
+            animation-iteration-count: infinite;
+            background: yellow;
+            padding: 10px;
+        }
+
+        @keyframes zmiana {
+            0% {
+                width: 100%;
+                opacity: 1.0;
+                color: red;
+                font-size: 16px;
+                background: yellow;
+
+            }
+
+            50% {
+                width: 20%;
+                opacity: 0.5;
+                color: black;
+                font-size: 30px;
+                font-style: italic;
+                background: white;
+            }
+
+            100% {
+                width: 100%;
+                opacity: 1.0;
+                color: red;
+                font-size: 16px;
+                background: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p id="p1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum facilisis feugiat. Proin efficitur
+        varius mollis. Aliquam nec vestibulum dolor, in convallis quam. Proin scelerisque eget lectus quis vehicula.
+        Cras bibendum semper felis, sit amet volutpat augue placerat non. Nullam gravida nisl et nisl vehicula
+        scelerisque. In mattis id risus nec imperdiet.
+    </p>
+
+</body>
+
+</html>
+<!-- 
+    1.szerokość od 100% do 20%
+    2. czcionka
+        a) kolor od czerwonego do czarnego
+        b) rozmiar czcionki od 16px do 30px
+        c) nieprzezroczystość od 100% do 50%
+        d) styl od zwykłego do pochylonego
+    3. tło od żółtego do białego
+
+-->

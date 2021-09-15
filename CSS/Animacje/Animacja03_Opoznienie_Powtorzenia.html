@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8"/>
+    <style>
+            #p1{
+                width: 282px;
+                height: 225px;
+                opacity:1.0;
+                animation-name: zmiana;
+                animation-duration: 5s;
+                animation-delay:2s;/*animacja rozpocznie sie po 2 sekundach*/
+                animation-iteration-count: 3;/*animacja powtórzy się 3 razy, można też wpisać infinite*/
+
+            }
+            @keyframes zmiana{
+                0%{ 
+                    width: 282px;
+                    height: 225px;
+                    opacity:1.0;
+                    
+                }
+                50%{ 
+                    width: 28px;
+                    height: 23px;
+                    opacity:0.1;
+                }
+                100%{
+                    width: 282px;
+                    height: 225px;
+                    opacity:1.0;
+                }
+            }      
+    </style>
+</head>
+<body>
+    <!-- 
+        https://www.w3schools.com/css/css3_animations.asp
+    -->
+    <h2>Zmiana rozmiaru i przezroczystości</h2>
+    <p>
+        <img id="p1" src="pies1.jpg" alt="piesio"/>
+    </p>
+  
+</body>
+</html>

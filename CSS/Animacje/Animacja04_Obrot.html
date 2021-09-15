@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        p,
+        h2 {
+            text-align: center;
+        }
+
+        #p1 {
+            width: 282px;
+            height: 225px;
+            opacity: 1.0;
+
+            transform: rotate(0deg);
+            animation-name: zmiana;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes zmiana {
+            0% {
+                width: 282px;
+                height: 225px;
+                opacity: 1.0;
+                transform: rotate(0deg);
+            }
+
+            50% {
+                width: 28px;
+                height: 23px;
+                opacity: 0.1;
+                transform: rotate(180deg);
+            }
+
+            100% {
+                width: 282px;
+                height: 225px;
+                opacity: 1.0;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        https://www.w3schools.com/css/css3_animations.asp
+    -->
+    <h2>Obrót</h2>
+    <p>
+        <img id="p1" src="pies1.jpg" alt="piesio" />
+    </p>
+
+</body>
+
+</html>

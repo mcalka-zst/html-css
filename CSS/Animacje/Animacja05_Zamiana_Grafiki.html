@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8"/>
+    <style>
+           h2{
+                text-align:center;
+            }
+    
+            #p1{
+                width: 282px;
+                height: 225px;
+                animation-name: zmiana;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                background-image:url("pies1.jpg");
+                margin:auto;
+                transform: rotate(0deg);
+
+            }
+            @keyframes zmiana{
+                0%{ 
+                    background-image:url("pies1.jpg"); 
+                    transform: rotate(0deg);
+                }
+                50%{ 
+                    background-image:url("pies2.jpg");
+                    transform: rotate(180deg);
+            
+                }
+                100%{
+                    background-image:url("pies1.jpg");
+                    transform: rotate(360deg);
+                }
+            }      
+    </style>
+</head>
+<body>
+    <!-- 
+        https://www.w3schools.com/css/css3_animations.asp
+    -->
+    <h2>Zamiana obrazów</h2>
+    <div id="p1">
+
+    </div>
+  
+</body>
+</html>
